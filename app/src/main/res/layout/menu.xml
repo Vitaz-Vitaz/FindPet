@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Здесь вы сможете найти потерянного домащнего питомца или его хозяина. "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+
+        />
+
+    <ImageView
+    android:layout_width="377dp"
+    android:id="@+id/fon007"
+    android:layout_height="310dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="50dp"
+    android:gravity="center"
+    android:padding="12dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/goToMap"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+
+        android:background="@drawable/deeded3"
+        android:enabled="true"
+        android:text="Перейти на карту" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/show"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:background="@drawable/deeded3"
+
+
+            android:text="просмотреть новые объявления" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/toRecycle2"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@drawable/deeded3"
+
+
+        android:text="просмотреть старые объявления" />
+    </LinearLayout>
+

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:padding="19dp"
+            android:textColor="@color/black"
+            android:text="Опишите ситуацию:"
+            android:textSize="25dp"
+            android:textStyle="italic">
+        </TextView>
+
+        <EditText
+            android:id="@+id/addDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:padding="12dp"
+
+            android:textColor="@color/black"
+            android:background="@drawable/for_edit2"
+
+            android:textSize="15sp"
+
+            android:textStyle="italic"
+            android:hint="Введите описание"
+            android:textColorHint="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:text="Как зовут вашего питомца?"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/petName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="left"
+
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="@drawable/for_edit2"
+            android:textStyle="italic"
+            android:textColorHint="@color/black"
+            android:hint="Введите кличку"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:text="Какого цвета(цветов) ваш питомец?:"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/petColor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+
+            android:gravity="left"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="@drawable/for_edit2"
+            android:textStyle="italic"
+            android:textColorHint="@color/black"
+            android:hint="Введите окрас"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:text="Оставьте контакты, чтобы с вами могли связаться:"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/petContact"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/black"
+            android:gravity="left"
+            android:padding="12dp"
+
+            android:textSize="15sp"
+            android:textColorHint="@color/black"
+            android:background="@drawable/for_edit2"
+            android:textStyle="italic"
+            android:hint="номер телефона/почта"/>
+
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="left"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Вы нашли или потеряли домашнее животное?"
+            android:textSize="20dp"
+            android:textStyle="italic" >
+
+        </TextView>
+
+
+      <androidx.appcompat.widget.AppCompatSpinner
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/spinner"
+          android:background="@drawable/for_edit2"
+          android:layout_marginLeft="20dp"
+
+          android:layout_marginRight="50dp"
+          android:padding="12dp"
+          android:textSize="15sp"
+          android:entries="@array/status"
+
+          android:theme="@style/Spinner"
+          />
+
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="left"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Можете прикрепить фото животного."
+            android:textColor="@color/black"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:background="@drawable/deeded"
+            android:text="Добавить фото"
+            />
+
+        <ImageView
+            android:id="@+id/addIMage"
+            android:layout_width="277dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_margin="10dp"
+
+            android:gravity="center"
+
+
+            >
+
+
+        </ImageView>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addPoint"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:textSize="15sp"
+            android:background="@drawable/deeded"
+
+            android:text="Добавить объявление"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

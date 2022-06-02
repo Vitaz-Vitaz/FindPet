@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="obj">
+
+        <item>"Найден кот в районе метро Алексеевская.\n Окрас белый с черным. Звонить по номеру: 89251233421 "</item>
+        <item>"Пропала собака районе метро Университет.\n Окрас белый с серым, порода хаски, отзывается на кличку Буран. Телефон хозяина: 89251233421 "</item>
+
+
+    </string-array>
+
+    <string-array name="x">
+
+    </string-array>
+    <string-array name="y">
+
+    </string-array>
+    <string-array name="description">
+
+    </string-array>
+
+
+
+</resources>
